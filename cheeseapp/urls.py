@@ -24,6 +24,8 @@ router = routers.DefaultRouter()
 # viewsets
 router.register(r'cheese', CheeseViewSet)
 
+print(router.urls)
+
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
